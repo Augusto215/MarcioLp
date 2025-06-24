@@ -175,23 +175,7 @@ Belo Horizonte/MG, 14 de abril de 2025.
                 </small>
               </div>
 
-              <!-- Button -->
-              <div id="btn-submit" style="--animation-speed:2s; width: 100%;" class="glowbox glowbox-active mt-4">
-                <div class="glowbox-animations">
-                  <div class="glowbox-glow"></div>
-                  <div class="glowbox-stars-masker">
-                    <div class="glowbox-stars"></div>
-                  </div>
-                </div>
-
-                <div class="glowbox-borders-masker">
-                  <div class="glowbox-borders"></div>
-                </div>
-                <button type="submit" class="btn-cta-box d-flex align-items-center" style="width: 100%;">
-                  <div class="btn-cta">SIM! QUERO ME CADASTRAR</div>
-                  <img src="./image/icon-arrow.svg" class="mx-3">
-                </button>
-              </div>
+             
             </form>
           </div>
 
@@ -372,6 +356,152 @@ html{
     text-transform:none;
     font-optical-sizing:auto;
 }
+
+           
+        
+    .main-title,
+.cta-button,
+.story-card,
+.story-card p,
+.story-card strong {
+    font-family: 'Aspekta', sans-serif;
+}
+
+ .hero-section {
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+            min-height: 20vh;
+            position: relative;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><defs><radialGradient id="grad" cx="50%" cy="50%"><stop offset="0%" style="stop-color:%23FF8031;stop-opacity:0.1"/><stop offset="100%" style="stop-color:%23000;stop-opacity:0.8"/></radialGradient></defs><rect width="100%" height="100%" fill="url(%23grad)"/></svg>') center/cover;
+            opacity: 0.3;
+        }
+        
+        .pulse-container {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .circle {
+            width: 12px;
+            height: 12px;
+            background-color: #FF8031;
+            border-radius: 50%;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .pulse {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            background-color: #FF8031;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+            opacity: 0.6;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.6; }
+            50% { transform: scale(1.5); opacity: 0.3; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+        
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #FF8031, #FF6B1A);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 30px rgba(255, 128, 49, 0.4);
+            transition: all 0.3s ease;
+            animation: glow 2s infinite alternate;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(255, 128, 49, 0.6);
+        }
+        
+        @keyframes glow {
+            from { box-shadow: 0 10px 30px rgba(255, 128, 49, 0.4); }
+            to { box-shadow: 0 10px 30px rgba(255, 128, 49, 0.8); }
+        }
+        
+        .story-section {
+            background: #111;
+            padding: 80px 0;
+            margin-bottom: 60px;
+        }
+        
+        .story-card {
+            background: #1a1a1a;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-left: 5px solid #ff551d;
+            position: relative;
+        }
+        
+        .story-image {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        
+      .highlight-text {
+            color: #ff551d;
+            font-weight: bold;
+        }
+
+        
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #FF8031;
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, #FF8031 0%, #FF6B1A 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 1.8rem;
+            }
+            .story-card {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+
 #igi4wa{
     color:#ffffff;
     font-size:80px;
@@ -10880,8 +11010,8 @@ html{
     </div>
     <div columns="2" column-gap="" show-rows="" id="igp6iwh" class="cm-row">
       <div id="iquea1l" class="cm-column">
-        <h2 data-style-guide-typography-subheadline="small" id="iit741v">Transforma tu</h2>
-        <h2 data-style-guide-typography-subheadline="small" id="iye9esc">computadora en uno</h2>
+        <h2 data-style-guide-typography-subheadline="small" id="iit741v">Convierte tu</h2>
+        <h2 data-style-guide-typography-subheadline="small" id="iye9esc">computadora en una</h2>
         <h2 data-style-guide-typography-subheadline="small" id="i13o7fm"><font id="ioklo6e">Máquina Millonaria</font></h2>
       </div>
       <div id="i9w9bwc" class="cm-column">
@@ -10909,13 +11039,16 @@ html{
     </div>
     <div columns="1" column-gap="" show-rows="" id="i43zl0l" class="cm-row">
       <div columns="1" column-gap="" show-rows="" id="iky99pw" class="cm-row">
+        
         <div id="iu5vixk" class="cm-column">
           <div id="ittjww9" class="cm-column">
             <div id="i18w2ks" class="cm-column">
               <div id="imqw59x" class="cm-video"><iframe id="i9r8l3j" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" width="560" height="315" frameborder="0" data-provider="panda" data-video-id="0f62b800-fc7d-4bbb-8791-9694bc8a1a71" allowfullscreen="" class="cm-video-player"></iframe></div>
             </div>
           </div>
-          
+
+        
+
           <div columns="2" column-gap="" show-rows="" id="i3pygvf" class="cm-row visible-only-desktop">
             <div id="i8m56z8" class="cm-column">
               <h2 data-style-guide-typography-subheadline="small" id="ih8ebj8">Mais de 4.000 alunos pelo mundo</h2>
@@ -10941,26 +11074,18 @@ html{
 
 
   <section id="izjn4dr" class="cm-section visible-only-desktop">
-    <div columns="2" column-gap="" show-rows="" id="i3yo74x" class="cm-row">
-      <div id="iovxldi" class="cm-column">
-        <div columns="1" column-gap="" show-rows="" id="iv276s9" class="cm-row">
-
-        </div>
-      </div>
-      <div id="ilrzn8v" class="cm-column visible-only-desktop">
-        <div columns="5" column-gap="" show-rows="" id="i6i1lxf" class="cm-row"><a data-style-guide-button="style1" id="ihih75o" href="#ihuoaso" class="cm-button bg-primary-600"><font id="i6mkihj" color="#aba099">Ventajas</font></a><a data-style-guide-button="style1" id="i996cqq" href="#iv841kw" class="cm-button bg-primary-600"><font id="i8ithoq" color="#aba099">Método</font></a><a data-style-guide-button="style1" id="i4vzefx" href="#iu4y0l" class="cm-button bg-primary-600"><font id="i5lfdul" color="#aba099">Garantía</font></a><a data-style-guide-button="style1" id="ibjsfjl" href="#iidbmk" class="cm-button bg-primary-600"><font id="i5dpsch" color="#aba099">Dudas</font></a> </div>
-      </div>
-    </div>
+   
     <div columns="2" column-gap="" show-rows="" id="ihwa8uc" class="cm-row">
       <div id="i33swgg" class="cm-column">
-        <h2 data-style-guide-typography-subheadline="small" id="i4ron9g">Transforma tu</h2>
+        <h2 data-style-guide-typography-subheadline="small" id="i4ron9g">Convierte tu</h2>
         <h2 data-style-guide-typography-subheadline="small" id="icsy8xi">
-          computadora en uno
+          computadora en una
         </h2>
         <h2 data-style-guide-typography-subheadline="small" id="iklvw47"><font id="imvpbhs">
           Máquina Millonaria</font>
         </h2>
       </div>
+      
       <div id="iyx9c6j" class="cm-column">
         <h2 data-style-guide-typography-subheadline="small" id="i16nl8e">Incluso si lo eres desde el principio
           <b id="izxv4df">cero absoluto a partir de</b> o que ya ha hecho todo en el
@@ -11006,11 +11131,185 @@ html{
               <div id="iy40m6n" class="cm-column"><img id="imzagwh" alt="img_prova_social.webp" src="https://projects.clickmax.io/437f955e-4cf5-4577-98b3-fe36ca4b0cc8/assets/8b613c61-b9fa-4176-9121-df9ba9c53bc2" loading="eager" data-component-link=""/></div>
             </div>
           </div>
-        
         </div>
       </div>
     </div>
   </section>
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKB4S5DN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="container-fluid bg-responsive">
+   <div class="container d-flex flex-column justify-content-start justify-content-md-between hero padding-desk">
+
+     <!-- BG mobile -->
+     <div class="d-block d-md-none">
+       
+     </div>
+
+     <div class="row mobile-spacer">
+       <div class="col-12 col-md-7 text-center text-md-start text-white mb-4 mb-md-0">
+        <div class="d-inline-flex align-items-center date-wrapper" style="margin-top: 55px;">
+  <div class="pulse-container">
+    <div class="circle"></div>
+    <div class="pulse"></div>
+  </div>
+  <h2 class="date"><span style="color: #FF8031;">EVENTO EN VIVO::</span> 26 De julio</h2>
+</div>
+
+         <h1 class="main-title font-22-mobile" style="text-transform: uppercase; color: #F4F3F2; margin-bottom: 16px;">
+            $10,000 DÓLARES AL MES,<br class="d-none d-md-block"> SIN MOSTRAR EL ROSTRO, USANDO MÁQUINAS INTELIGENTES...
+         </h1>
+         <p class="subtext">
+           El juego SE TERMINÓ para el 99% de las personas... En 1 año, el mundo estará dividido entre los DUEÑOS de Internet y sus ESCLAVOS.
+         </p>
+       </div>
+
+       <div class="col-1">
+       </div>
+
+       <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-center justify-content-start justify-content-md-end padding-t-72">
+         <p class="cta-text pb-3 pb-md-0">Haz clic en el botón abajo y haz tu<br><span style="color: #FF8031; text-transform: uppercase; font-weight: 700;">REGISTRO GRATUITO:</span></p>
+
+         <!-- Button -->
+         <div style="--animation-speed:2s" class="glowbox glowbox-active">
+           <div class="glowbox-animations">
+             <div class="glowbox-glow"></div>
+             <div class="glowbox-stars-masker">
+               <div class="glowbox-stars"></div>
+             </div>
+           </div>
+
+           <div class="glowbox-borders-masker">
+             <div class="glowbox-borders"></div>
+           </div>
+           <button class="btn-cta-box d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#formPreCheckout">
+             <div class="btn-cta">¡SÍ! QUIERO REGISTRARME</div>
+             <img src="./image/icon-arrow.svg" class="mx-3">
+           </button>
+         </div>
+
+         <div class="mt-md-3 mt-4 d-flex align-items-center" style="padding-bottom: 0px;">
+           <img class="z-1" src="./image/Frame 15.png" height="36">
+           <div class="subs-counter z-0"></div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+<style>
+    p{
+        color: "#ff551d;";
+    }
+    
+</style>
+
+<!-- Story Section -->
+    <div class="story-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="highlight-text" style="color: #ff551d;">DE CERO AL MILLÓN</h2>
+                <h1 class="display-4 fw-bold" style="font-size: 32px;">Conocerás como gano millones de $us mientras viajo por el mundo</h1>
+            </div>
+            
+
+         <!-- Story Card 1 -->
+<div class="story-card">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="./image/image00005.jpeg" class="story-image">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <p style="color: #ff551d; font-size: 25px;">Nada de ese discurso barato de...</p>
+      <p style="color: #ff551d; font-size: 25px;">"te voy a enseñar a ganar 300 bolis extra con apuestas, o con day trading"</p>
+      <p style="color: #ff551d; font-size: 25px;"><strong>🙄</strong></p>
+      <p style="color: #ff551d; font-size: 25px;">Eso es para los que se emocionan con doble de anticucho en la feria.</p>
+      <p style="color: #ff551d; font-size: 25px;">Gente que celebra si llega a la quincena sin fiarse pan.</p>
+      <br>
+      <p style="color: #ff551d; font-size: 25px;">Yo no estoy aquí para enseñarte a sobrevivir.</p>
+      <p style="color: #ff551d; font-size: 25px;">Estoy para mostrarte cómo se hace plata de verdad.</p>
+      <p style="color: #ff551d; font-size: 25px;">Porque los que están ahí no hacen publicidad ni cursos.</p>
+      <p style="color: #ff551d; font-size: 25px;">Sin jefe. Sin horario. Sin llorar.</p>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Story Card 2 -->
+<div class="story-card">
+  <div class="row align-items-center">
+    <div class="col-md-6 order-md-2">
+      <img src="./image/image00002.jpeg" class="story-image">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <p style="color: #ff551d; font-size: 20px;">¿Quieres saber de qué estoy hablando?</p>
+      <p style="color: #ff551d; font-size: 20px;">De mínimo 100 dólares por día.</p>
+      <p style="color: #ff551d; font-size: 20px;">Y si lo metes con fuerza, llegas a los 1,000 normal.</p>
+      <p style="color: #ff551d; font-size: 20px;">¿10 mil por día? Bueno, ahí ya sos tipo alienígena con WiFi 💀</p>
+      <br>
+      <p style="color: #ff551d; font-size: 20px;"></p>
+      <p style="color: #ff551d; font-size: 20px;">Claro que no.</p>
+      <p style="color: #ff551d; font-size: 20px;">Porque los que están ahí no hacen publicidad ni cursos.</p>
+      <p style="color: #ff551d; font-size: 20px;">Facturan en silencio.</p>
+      <p style="color: #ff551d; font-size: 20px;">Y en dólares.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Story Card 3 -->
+<div class="story-card">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="./image/image00001.jpeg" class="story-image">
+    </div>
+    <div class="col-md-6">
+      <p style="color: #ff551d; font-size: 20px;">Puedes ser flojo, medio burro, o de esos que se rinden a la primera.</p>
+      <p style="color: #ff551d; font-size: 20px;">Pero si aprendes a vender en internet</p>
+      <p style="color: #ff551d; font-size: 20px;">el mundo te paga.</p>
+      <p style="color: #ff551d; font-size: 20px;">Y no en bolivianos.</p>
+      <p style="color: #ff551d; font-size: 20px;">🫦 Te paga en dólares.</p>
+      <br>
+      <p style="color: #ff551d; font-size: 20px;">Y no, no necesitas bailar en TikTok, ni subir frases de Paulo Coelho en tus estados.</p>
+      <p style="color: #ff551d; font-size: 20px;">Solo necesitas una computadora, conexión y decisión.</p>
+      <p style="color: #ff551d; font-size: 20px;">¿Mucho pedir?</p>
+    </div>
+  </div>
+</div>
+
+<!-- Story Card 4 -->
+<div class="story-card">
+  <div class="row align-items-center">
+    <div class="col-md-6 order-md-2">
+      <img src="./image/image00004.jpeg" class="story-image">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <p style="color: #ff551d; font-size: 20px;">Si todavía estás leyendo,</p>
+      <p style="color: #ff551d; font-size: 20px;">es porque algo dentro tuyo ya se cansó de estar siempre yesca.</p>
+      <br>
+      <p style="color: #ff551d; font-size: 20px;">Y ahora decidite:</p>
+      <p style="color: #ff551d; font-size: 20px;">¿Quieres hacer plata o prefieres seguir aplaudiendo cada vez que te alcanza para el combo 2 de salchipapa? 🙊 </p>
+    </div>
+  </div>
+</div>
+
+<!-- Story Card 5 -->
+<div class="story-card">
+  <div class="row align-items-center">
+    <div class="col-md-6 order-md-2">
+      <img src="./image/image00003.jpeg" class="story-image">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <p style="color: #ff551d; font-size: 20px;">Has clic en el botón y participa de la Live donde te mostraré como yo lo</p>
+      <p style="color: #ff551d; font-size: 20px;">hice, y como tú puedes copiar los mismos pasos y hacer millones. Este </p>
+      <br>
+      <p style="color: #ff551d; font-size: 20px;">mercado es inmenso, y es un mar azul que poquísimos están navegando aún y </p>
+      <p style="color: #ff551d; font-size: 20px;">los que estamos, pues estamos surfeando. Brindaremos 🥂</p>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
   <div id="isluppy" class="cm-column"><div id="iyelkxo" class="cm-column"><h2 data-style-guide-typography-subheadline="small" id="ixrxckk">Vantagens<br id="i6v8pwh"></h2></div><div id="i0glkn9" class="cm-column"><div columns="1" column-gap="" show-rows="" id="i8396ul" class="cm-row"><div id="i36k4qv" class="cm-column"><h2 data-style-guide-typography-subheadline="small" id="iyt6eqd">Faça vendas em tempo recorde</h2></div></div><h2 data-style-guide-typography-subheadline="small" id="ifk745e">e viva como um verdadeiro milionário!<br id="ipkppdh"></h2><div columns="2" column-gap="" show-rows="" id="i38w8nf" class="cm-row"><div id="iajsy5g" class="cm-column"><div id="isq9d9k" class="cm-column"><img id="id6jggf" alt="money_time_coins.webp" src="https://projects.clickmax.io/3d9d1166-8175-4db7-8693-9b20568d8d71/assets/fc6f8752-749f-45e4-8afa-004be478101d" loading="eager" data-component-link=""></div><div id="is7d04q" class="cm-column"><h2 data-style-guide-typography-subheadline="small" id="inggmyf">Mais dinheiro, mais tempo, mais liberdade.<br id="ihaenpg"></h2></div><div id="in9371y" class="cm-column"> </div><div id="izifivj" class="cm-column"><h2 data-style-guide-typography-subheadline="small" id="imjxybi">Nos últimos 12 anos eu criei um jeito simples de construir um verdadeiro império online. Agora em 2025, isso ficou 100x mais fácil e rápido com o poder da Inteligência Artificial…<br id="it8g98r"></h2></div></div><div id="i07dyzh" class="cm-column"><div id="iliuvjh" class="cm-column"><img id="imkg3oq" alt="interface_essential_settings_gear.webp" src="https://projects.clickmax.io/3d9d1166-8175-4db7-8693-9b20568d8d71/assets/fa326d24-64fa-44f5-afb8-9d1e92dc82f7" loading="eager" data-component-link=""></div><div id="i7xh864" class="cm-column"><h2 data-style-guide-typography-subheadline="small" id="i08bkcl">Sua própria Máquina<br id="iszuy6c">Milionária de Vendas </h2></div><div id="ipxriqf" class="cm-column"> </div><div id="ixtnxkj" class="cm-column"><h2 data-style-guide-typography-subheadline="small" id="i8e226r">Esse método vai te mostrar o caminho para que a Inteligência Artificial faça todo o trabalho pesado enquanto você assiste as notificações de venda caindo na tela do seu celular<br id="i6tgsdq"></h2></div></div></div><div columns="2" column-gap="" show-rows="" id="i84p29i" class="cm-row"><div id="iek2c2c" class="cm-column"><div id="imqirww" class="cm-column"><div id="irs96px" class="cm-column"><img id="ixc63vk" alt="health_medicine_brain.webp" src="https://projects.clickmax.io/3d9d1166-8175-4db7-8693-9b20568d8d71/assets/c7f97f41-8144-479a-a7e3-7540eaa06f93" loading="eager" data-component-link=""></div></div><div id="izw2mfc" class="cm-column"><h2 data-style-guide-typography-subheadline="small" id="i1wpw1r">Um cérebro multimilionário<br id="ik12wgj">a sua disposição<br id="il47cdr"></h2></div><div id="i7ueyw1" class="cm-column"> </div><div id="iko2v39" class="cm-column"><h2 data-style-guide-typography-subheadline="small" id="igkvxaw">Eu reuní 12 anos da minha experiência numa inteligência que você terá acesso e será capaz de transformar ideias em dinheiro, ou melhor, muito dinheiro!<br id="i0vlrvj"></h2></div></div><div id="iss6yei" class="cm-column"><div id="i8aqg0c" class="cm-column"><img id="iy8t16u" alt="interface_essential_earth_home_world.webp" src="https://projects.clickmax.io/3d9d1166-8175-4db7-8693-9b20568d8d71/assets/8b2e8a24-f311-4632-862a-ca92726ce66f" loading="eager" data-component-link=""></div><div id="i7znygt" class="cm-column"><h2 data-style-guide-typography-subheadline="small" id="iyb3h3d">O poder da mais avançada I.A<br id="iu0x1io">de marketing nas suas mãos! </h2></div><div id="inggq1g" class="cm-column"> </div><div id="ikm18ru" class="cm-column"><h2 data-style-guide-typography-subheadline="small" id="i50drw6">Crie o seu produto do 0 ou aumente as suas vendas em 2x, 5x, 10x mais! Zero esforço, sem mostrar seu rosto e sem precisar ter conhecimento pra isso. O Máquina Milionária te mostrará como…<br id="ic3l44p"></h2></div></div></div></div></div>
